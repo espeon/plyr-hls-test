@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>HLS Test</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://unpkg.com/plyr@3/dist/plyr.css">
+  <link rel="stylesheet" href="https://rsms.me/inter/inter.css?v=3.15">
+</head>
+
+<body>
+  <script src="https://cdn.jsdelivr.net/npm/hls.js"></script>
+    <script src="https://gist.githack.com/kanbaru/e049b1c99a27639f48146aeeb7acb70c/raw/a3c7b51b0dba1e09de20909a01768eb39c7b1cc6/plyr.min.js"></script>
+    <script src="./script.js"></script>
+  
+    <div class="container">
+      <video controls crossorigin playsinline >
+        <source 
+          type="application/x-mpegURL" 
+          src="hls/playlist.m3u8"
+        >
+      </video>
+    </div>
+  </body>
+
+</html>
